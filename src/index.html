@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imposer — PDF imposition</title>
+<style>/*CSS*/</style>
+</head>
+<body class="empty">
+<header>
+  <strong class="brand">Imposer</strong>
+  <button id="open" class="primary">Open PDF…</button>
+  <input id="file" type="file" accept="application/pdf,.pdf" hidden>
+  <button id="undo" disabled title="Ctrl+Z">↶ Undo</button>
+  <button id="redo" disabled title="Ctrl+Shift+Z">↷ Redo</button>
+  <span id="info"></span>
+  <button id="download" class="primary" disabled>Download PDF</button>
+</header>
+<main>
+  <nav id="tools" aria-label="Tools"></nav>
+  <section id="side">
+    <form id="form" onsubmit="return false"></form>
+    <div id="status" role="status" class="ok">Your files stay on this computer — nothing is uploaded.</div>
+    <div id="steps"></div>
+  </section>
+  <section id="view">
+    <iframe id="preview" title="Preview of the current PDF"></iframe>
+    <button id="drop" type="button"><b>Drop a PDF here</b><span>or click to choose one</span></button>
+  </section>
+</main>
+<script>window.IMPOSER_FONT="/*FONT*/";</script>
+<script>/*JS*/</script>
+</body>
+</html>

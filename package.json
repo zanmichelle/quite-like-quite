@@ -1,0 +1,29 @@
+{
+  "name": "imposer",
+  "version": "1.0.0",
+  "description": "PDF imposition in the browser",
+  "scripts": {
+    "test": "node --test",
+    "build": "node build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanmichelle/quite-like-quite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zanmichelle/quite-like-quite/issues"
+  },
+  "homepage": "https://github.com/zanmichelle/quite-like-quite#readme",
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "type": "module",
+  "private": true
+}
